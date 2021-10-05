@@ -16,6 +16,7 @@
 
 body {
   display: flex;
+  justify-content: center;
 }
 
 .wrapper {
@@ -23,6 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
 }
 .head {
@@ -106,7 +108,7 @@ button {
   .wrapperdesktop {
     flex-grow: 5;
     background: url("images/hero-desktop.jpg") no-repeat top center/cover;
-    /* max-height: 100vh; */
+    min-height: 100vh;
     max-width: 100%;
   }
   .image {
