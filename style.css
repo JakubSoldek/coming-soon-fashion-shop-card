@@ -37,6 +37,12 @@ body {
   width: 65%;
   padding-left: 8vw;
 }
+.image{
+  background: url("images/hero-mobile.jpg") no-repeat top center/cover;
+    height: 250px;
+    width:100vw;
+    /* max-width: 100%; */
+}
 .header-title {
   font-size: var(--large-size);
   letter-spacing: 0.9rem;
