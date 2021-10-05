@@ -85,7 +85,8 @@ button {
   align-items: center;
   cursor: pointer;
   box-shadow: 0px 10px 20px hsla(0, 36%, 70%, 0.5);
-
-  /* #hero-mobile {
-  width: 50%; */
+}
+#hero-mobile {
+  width: 100%;
+  background-size: cover;
 }
