@@ -17,6 +17,11 @@
 body {
   display: flex;
   justify-content: center;
+  background: url("/images/bg-pattern-desktop.svg") no-repeat , linear-gradient(135deg, white, #f5e1e1);
+  background-position-x: 10%;
+  background-size: cover;
+
+
 }
 
 .wrapper {
