@@ -61,7 +61,7 @@ input[type="email"] {
   width: 75vw;
   height: 6vh;
   border-radius: 10rem;
-  border: 1px solid hsla(0, 36%, 70%, 60%);
+  border: 1px solid #ce9797;
   font-size: var(--normal-size);
   padding: 0 2rem 0 2rem;
   position: relative;
