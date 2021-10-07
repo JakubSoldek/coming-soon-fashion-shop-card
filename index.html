@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
     <link
       rel="icon"
       type="image/png"
@@ -36,18 +38,22 @@
         launch deals.
       </p>
 
-      <div class="input">
+      <form class="input">
         <input
-          type="email"
+          type="text"
           id="email"
           name="email"
           placeholder="Email Address"
           required
         />
+        <div class="error-icon-wrapper">
+          <img src="./images/icon-error.svg" alt="error icon" />
+        </div>
         <button>
           <img src="images/icon-arrow.svg" alt="" />
         </button>
-      </div>
+      </form>
+      <p class="error-msg">Please provide a valid email</p>
     </div>
     <div class="wrapperdesktop"></div>
   </body>

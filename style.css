@@ -72,14 +72,15 @@ p {
 .input {
   position: relative;
 }
-input[type="email"] {
+input[type="text"] {
   width: 80vw;
-  height: 6vh;
+  min-height: 6vh;
   border-radius: 10rem;
   border: 1px solid #ce9797;
   font-size: var(--normal-size);
   padding: 0 2rem 0 2rem;
   position: relative;
+ 
 }
 ::placeholder {
   color: hsl(0, 36%, 70%);
@@ -105,6 +106,29 @@ button {
   width: 100%;
   background-size: cover;
 } */
+.error-icon-wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25%;
+}
+.error-msg{
+  color: hsl(0, 93%, 68%);
+  padding: 1rem 2rem 3rem 6rem;
+  align-self: flex-start;
+}
+
+.error-icon-wrapper, .error-msg{
+  display: none;
+}
+
+
+.input.error .error-icon-wrapper{
+  display: block;
+}
+.input.error + .error-msg{
+  display: block;
+}
 
 @media screen and (min-width: 480px) {
   body {
@@ -126,7 +150,7 @@ button {
   .image {
     display: none;
   }
-  input[type="email"] {
+  input[type="text"] {
     width: 27vw;
     height: 6vh;
   }
@@ -156,4 +180,8 @@ button {
   span{
     font-size: var(--large-desktop) ;
   }
+  .error-icon-wrapper{
+    right: 20%;
+  }
+
 }
