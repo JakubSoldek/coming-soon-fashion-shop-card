@@ -116,7 +116,9 @@ button {
 .error-msg{
   color: hsl(0, 93%, 68%);
   padding: 1rem 2rem 3rem 6rem;
-  align-self: flex-start;
+  /* align-self: flex-start; */
+  font-size: var(--normal-size);
+  text-align: left;
 }
 
 .error-icon-wrapper{
