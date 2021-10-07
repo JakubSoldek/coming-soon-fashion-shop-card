@@ -17,9 +17,10 @@
 body {
   display: flex;
   justify-content: center;
-  background: url("/images/bg-pattern-desktop.svg") no-repeat , linear-gradient(135deg, white, #f5e1e1);
+  background-color: #f5e1e1;
+  /* background: url("/images/bg-pattern-desktop.svg") no-repeat , linear-gradient(135deg, white, #f5e1e1);
   background-position-x: 10%;
-  background-size: cover;
+  background-size: cover; */
 
 
 }
@@ -33,7 +34,7 @@ body {
   align-items: center;
 }
 .head {
-  height: 10vh;
+  height: 8vh;
   align-self: flex-start;
   display: flex;
   align-items: center;
@@ -65,7 +66,7 @@ p {
   text-align: center;
   font-size: var(--normal-size);
   color: hsl(0, 36%, 70%);
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 3rem 2rem 4rem 2rem;
   line-height: 1.5;
 }
 
@@ -118,8 +119,11 @@ button {
   align-self: flex-start;
 }
 
-.error-icon-wrapper, .error-msg{
+.error-icon-wrapper{
   display: none;
+}
+.error-msg{
+  visibility: hidden;
 }
 
 
@@ -127,10 +131,33 @@ button {
   display: block;
 }
 .input.error + .error-msg{
-  display: block;
+  visibility: visible;
+}
+@media screen and (min-width: 501px) and (max-width: 780px){
+  p{
+    width: 60vw;
+    line-height: 1.7;
+  }
+  input[type="text"] {
+    width: 50vw;
+}
+.input {
+  /* padding-bottom: 5rem; */
+}
+.header-title{
+  line-height: 1.2;
+  padding: 4rem 5rem 0rem 5rem;
+}
+.error-msg{
+  padding: 1rem 2rem 3rem 15rem;
+
 }
 
-@media screen and (min-width: 480px) {
+button {
+  width: 10vw;
+}
+  }
+@media screen and (min-width: 781px) {
   body {
     display: flex;
     height:100vh;
@@ -168,7 +195,9 @@ button {
     font-size: var(--normal-desktop);
   }
   p{
+    padding-top: 1rem;
       padding-bottom: 4rem;
+      line-height: 1.5;
   }
   .header-title {
     line-height: 1.2;
@@ -183,5 +212,9 @@ button {
   .error-icon-wrapper{
     right: 20%;
   }
-
+  .error-msg{
+    padding: 1rem 2rem 3rem 1rem;
+  
+  }
 }
+
