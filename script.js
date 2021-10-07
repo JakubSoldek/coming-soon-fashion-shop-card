@@ -10,8 +10,9 @@ inputForm.onsubmit = (e) => {
   const userEmail = e.target.email.value;
   if (userEmail && validateEmail(userEmail)) {
     e.target.classList.remove("error");
+    window.location.reload();
     console.log(userEmail);
-    location.reload();
+    
     
   } else {
     // console.log(userEmail);
