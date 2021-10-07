@@ -1,3 +1,4 @@
+
 const inputForm = document.querySelector(".input");
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -10,10 +11,13 @@ inputForm.onsubmit = (e) => {
   if (userEmail && validateEmail(userEmail)) {
     e.target.classList.remove("error");
     console.log(userEmail);
+    location.reload();
+    
   } else {
     // console.log(userEmail);
     e.target.classList.add("error");
     
 
   }
+  
 };
