@@ -17,7 +17,7 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: #f5e1e1c4;
+  background-color: #fff3f3;
   /* background: url("/images/bg-pattern-desktop.svg") no-repeat , linear-gradient(135deg, white, #f5e1e1);
   background-position-x: 10%;
   background-size: cover; */
@@ -149,7 +149,7 @@ button {
   padding: 4rem 5rem 0rem 5rem;
 }
 .error-msg{
-  padding: 1rem 2rem 3rem 15rem;
+  padding: 1rem 2rem 3rem 15rem; 
 
 }
 
@@ -157,7 +157,7 @@ button {
   width: 10vw;
 }
   }
-@media screen and (min-width: 781px) {
+@media screen and (min-width: 1000px) {
   body {
     display: flex;
     height:100vh;
