@@ -133,17 +133,15 @@ button {
 .input.error + .error-msg{
   visibility: visible;
 }
-@media screen and (min-width: 501px) and (max-width: 780px){
+@media screen and (min-width: 501px) and (max-width: 999px){
   p{
-    width: 60vw;
+    width: 70vw;
     line-height: 1.7;
   }
   input[type="text"] {
-    width: 50vw;
+    width: 60vw;
 }
-.input {
-  /* padding-bottom: 5rem; */
-}
+
 .header-title{
   line-height: 1.2;
   padding: 4rem 5rem 0rem 5rem;
